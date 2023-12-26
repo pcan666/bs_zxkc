@@ -17,4 +17,6 @@ public class StudentInfo extends Account {
     private String xueyuanName;
     @Column(name = "score")
     private Integer score;
+    @Column(name = "balance")
+    private Double  balance;
 }

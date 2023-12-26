@@ -22,6 +22,11 @@ public class StudentInfoController {
         studentInfoService.update(studentInfo);
         return Result.success();
     }
+    @PostMapping("/chongzhi")
+    public Result chongzhi(@RequestBody StudentInfo studentInfo,@RequestParam Double money){
+        studentInfoService.chongzhi(studentInfo,money);
+        return Result.success();
+    }
     //查询所有
     @GetMapping
     public Result findALl(){

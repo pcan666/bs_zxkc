@@ -153,6 +153,13 @@
                                                        placeholder="请输入职称">
                                             </div>
                                         </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">余额</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" class="form-control" disabled v-model="entity.balance"/>
+                                            </div>
+                                        </div>
                                     </form>
                                     <div style="text-align: center">
                                         <button class="btn btn-primary" @click="update()">保存</button>

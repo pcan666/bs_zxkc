@@ -15,4 +15,6 @@ public class TeacherInfo extends Account{
     private Long zhuanyeId;
     @Transient
     private  String zhuanyeName;
+    @Column(name = "balance")
+    private Double balance;
 }

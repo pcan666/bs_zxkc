@@ -90,4 +90,10 @@ public class StudentInfoService {
     public void deleteById(Long id) {
         studentInfoDao.deleteByPrimaryKey(id);
     }
+
+    public void chongzhi(StudentInfo studentInfo, Double money) {
+        StudentInfo dbStudentInfo = studentInfoDao.selectByPrimaryKey(studentInfo.getId());
+        studentInfo.setBalance(dbStudentInfo.getBalance() + money);
+        studentInfoDao.updateByPrimaryKeySelective(studentInfo);
+    }
 }
